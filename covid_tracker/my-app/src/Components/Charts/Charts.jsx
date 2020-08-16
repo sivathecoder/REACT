@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchDailyData } from "../../API";
 import { Line, Bar } from "react-chartjs-2";
 import styles from "./Charts.module.css";
-import { CountryPicker } from "..";
+
 
 const Charts = ({ data, country }) => {
   const [dailyData, setDailyData] = useState([]);
