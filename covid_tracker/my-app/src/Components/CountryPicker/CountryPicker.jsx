@@ -10,7 +10,7 @@ const CountryPicker = ({ handleCountryChange }) => {
       setFetchedCountries(await fetchCountries());
     };
     fetchCountriesAPI();
-  });
+  },[setFetchedCountries]);
 
   return (
     <FormControl className={styles.formControl}>
